@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jairo García Castro - UO271449">
+    <meta name="description" content="Pequeño juego de preguntas sobre el contenido del sitio web">
+    <meta name="keywords" content="Esuatini, Suazilandia, juego, test, quiz, preguntas">
+
+    <title>Turismo Esuatini - Juego</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/nav.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Turismo Esuatini</h1>
+        <nav>
+            <a href="index.html" title="Página de inicio" tabindex="1" accesskey="I">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía" tabindex="2" accesskey="G">Gastronomía</a>
+            <a href="rutas.html" title="Rutas turísticas" tabindex="3" accesskey="R"> Rutas</a>
+            <a href="meteorologia.html" title="Información meteorológica" tabindex="4" accesskey="M">Meteorología</a>
+            <a href="juego.html" class="active" title="Juego" tabindex="5" accesskey="J">Juego</a>
+            <a href="php/reservas.php" title="Reserva de rutas" tabindex="6" accesskey="V">Reservas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Test sobre Esuatini</h2>
+            <p>
+                En este pequeño juego de de preguntas tipo test podrás verificar si tus conocimientos sobre Esuatini son
+                tan adecuados como este maravilloso país merece. Si descubres que no es el caso, ¡no te preocupes!,
+                encontrarás las respuestas a todas las preguntas en este mismo sitio web. ¡Suerte!
+            </p>
+            <input type="button" value="¡Comenzar!" onclick="quiz.start();">
+        </section>
+    </main>
+
+    <footer>
+        <p>Jairo García Castro - Software y Estándares para la Web 2023</p>
+    </footer>
+    <script src="js/quiz.js"></script>
+
+
+</body></html>

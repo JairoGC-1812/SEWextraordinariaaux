@@ -1,0 +1,182 @@
+/* 
+=========================================================== 
+    Autor: Jairo García Castro - UO271449
+    Descripción de la hoja de estilo: 
+    Hoja que se encarga de la gestión de las características
+    generales de estilo: fuentes, colores, multimedia...
+===========================================================
+*/
+/* Especificidad: 0 0 2 */
+body>header {
+    background-color: rgb(91, 149, 197);
+    padding: 0%;
+}
+
+/* Especificidad: 0 0 1 */
+footer {
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(91, 149, 197);
+    font-weight: bold;
+}
+
+/* Especificidad: 0 0 1 */
+aside {
+    background-color: rgb(91, 149, 197);
+}
+
+/* Especificidad: 0 0 2 */
+aside>h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Especificidad: 0 0 1 */
+body {
+    text-align: justify;
+    background-color: rgb(117, 166, 206);
+    font-size: large;
+    color: black;
+}
+
+/* Especificidad: 0 0 1 */
+dt {
+    font-weight: bold;
+}
+
+/* Especificidad: 0 0 1 */
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Especificidad: 0 0 1 */
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Especificidad: 0 0 1 */
+h3 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Especificidad: 0 0 1 */
+h4,
+h5 {
+    text-align: center;
+}
+
+
+/* Especificidad: 0 0 3 */
+table tr th {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Especificidad: 0 0 3 */
+table tr th,
+/* Especificidad: 0 0 1 */
+td {
+    border: 0.05em solid;
+    padding: 0.5em;
+}
+
+/* Especificidad: 0 0 1 */
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Especificidad: 0 0 3 */
+main>section>button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    font-size: large;
+}
+
+/* Especificidad: 0 0 3 */
+main>section>section {
+    border: solid;
+    border-radius: 0.5em;
+    background-color: rgb(196, 219, 240);
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+/* Especificidad: 0 0 4 */
+main>section>section>dl {
+    text-align: left;
+}
+
+/* Especificidad: 0 0 3 */
+main>section>p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Especificidad: 0 1 1 */
+input[type=button] {
+    background-color: rgb(203, 214, 53);
+    font-size: larger;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+/* Especificidad: 0 0 3 */
+section>article p {
+    font-size: larger;
+}
+
+/* Especificidad: 0 0 1 */
+legend {
+    font-size: large;
+    text-align: left;
+}
+
+/* Especificidad: 0 0 3 */
+section>article>h3 {
+    font-size: larger;
+    text-decoration: none;
+}
+
+/* Especificidad: 0 1 4 */
+section>article>h3+p:only-of-type {
+    background-color: red;
+    font-weight: bold;
+    padding: 0.2em;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Especificidad: 0 0 1 */
+a {
+    color: #000052;
+    word-wrap: break-word;
+}
+
+/* Especificidad: 0 1 5 */
+main>article>section>dl:last-of-type>dd {
+    display: list-item;
+    list-style-type: disc;
+}
+
+/* Especificidad: 0 0 3 */
+main>article>p {
+    max-width: 80%;
+}
+
+/* Especificidad: 0 0 2 */
+form>button,
+/* Especificidad: 0 1 1 */
+input[type="submit"] {
+    font-size: large;
+    background-color: #9198EE;
+}

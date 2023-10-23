@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jairo García Castro - UO271449">
+    <meta name="description" content="Página principal del sitio web, donde se pueden observar fotos del país, información meteorológica, un mapa de situación y noticias">
+    <meta name="keywords" content="Esuatini, Suazilandia, tiempo, noticias, imágenes, turismo">
+
+    <title>Turismo Esuatini</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/nav.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Turismo Esuatini</h1>
+        <nav>
+            <a href="index.html" class="active" title="Página de inicio" tabindex="1" accesskey="I">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía" tabindex="2" accesskey="G">Gastronomía</a>
+            <a href="rutas.html" title="Rutas turísticas" tabindex="3" accesskey="R"> Rutas</a>
+            <a href="meteorologia.html" title="Información meteorológica" tabindex="4" accesskey="M">Meteorología</a>
+            <a href="juego.html" title="Juego" tabindex="5" accesskey="J">Juego</a>
+            <a href="php/reservas.php" title="Reserva de rutas" tabindex="6" accesskey="V">Reservas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Esuatini en fotos</h2>
+            <button type="button" onclick="carousel.prev()"> &lt; </button>
+            <img src="multimedia/aves_mlilwane.jpg" alt="Hipopótamo rugiendo en la reserva de Mlilwane con aves levantando el vuelo detrás.">
+            <button type="button" onclick="carousel.next()"> &gt; </button>
+        </section>
+
+        <section>
+            <h2>¿Dónde se encuentra Esuatini?</h2><img src="https://maps.googleapis.com/maps/api/staticmap?center=-26.543989,31.532736&amp;zoom=8&amp;size=800x600&amp;markers=color:red%7Clabel:%7C-26.543989,31.532736&amp;sensor=false&amp;key=AIzaSyBXjk9mx9DWgzplUVXKroSbRdrewyo0uho" alt="mapa estático google">
+        </section>
+
+        <section>
+            <h2>Noticias recientes</h2><section><h3><a href="https://larepublica.pe/mundo/2020/12/13/muere-el-primer-ministro-de-eswatini-quien-contrajo-la-covid-19-hace-un-mes/">Muere el primer ministro de Eswatini, quien contrajo la COVID-19 hace un mes</a></h3><p>El alto funcionario del país africano fue trasladado a Sudáfrica el 1 de diciembre para recibir tratamiento por el nuevo coronavirus, pero no logró superar la enfermedad.</p></section><section><h3><a href="https://www.infobae.com/america/mundo/2021/11/26/israel-detecto-tres-casos-sospechosos-de-la-nueva-variante-del-covid-19-y-prohibio-el-ingreso-de-viajeros-de-siete-paises-de-africa/">Israel confirmó el primer caso de la nueva variante del COVID-19 en su territorio y prohibió el ingreso de viajeros de siete países de África</a></h3><p>El primer ministro, Naftali Bennett, ordenó incluir a Sudáfrica, Lesotho, Botswana, Zimbabwe, Mozambique, Namibia y Eswatini en la lista roja de países por la situación sanitaria. Hay otros dos casos sospechosos</p></section><section><h3><a href="https://www.infobae.com/america/eeuu/2021/11/27/estados-unidos-recomienda-no-viajar-a-ocho-paises-africanos-por-omicron-la-nueva-variante-del-covid-19/">Estados Unidos recomienda no viajar a ocho países africanos por Ómicron, la nueva variante del COVID-19</a></h3><p>Los CDC elevaron el nivel de riesgo de volar a Sudáfrica, Zimbabue, Namibia, Mozambique, Malaui, Lesoto, Eswatini y Botsuana</p></section><section><h3><a href="https://www.abc.es/sociedad/abci-darias-anuncia-restricciones-vuelos-espana-procedentes-paises-africa-afectados-omicron-202111291324_noticia.html">Darias anuncia nuevas restricciones en los vuelos a España procedentes de países del sur de África afectados por Ómicron</a></h3><p>Esta decisión llega después de que este lunes entrara en vigor una orden que obliga a los viajeros procedentes de Botswana, Eswatini, Lesotho, Mozambique, Namibia, Sudáfrica y Zimbabwe a cumplir una cuarentena de diez días</p></section><section><h3><a href="https://www.infobae.com/america/mundo/2021/12/10/espana-prorrogo-hasta-el-26-de-diciembre-la-cuarentena-a-los-viajeros-procedentes-de-paises-africanos-considerados-de-riesgo-por-la-variante-omicron/">España prorrogó hasta el 26 de diciembre la cuarentena a los viajeros procedentes de países africanos considerados de riesgo por la variante Ómicron</a></h3><p>La medida afecta a los pasajeros de los vuelos que lleguen a la nación ibérica, con o sin escalas, desde cualquier aeropuerto situado en Botsuana, Eswatini, Lesotho, Mozambique, Namibia, Sudáfrica y Zimbabue</p></section>
+        <section><h3>Meteorología</h3><img src="https://openweathermap.org/img/w/03n.png" alt="Icono del tiempo"><ul><li>Tiempo: nubes dispersas</li><li>Temperatura: 10.33ºC</li><li>Temperatura mínima: 10.33ºC</li><li>Temperatura máxima: 10.33ºC</li></ul></section></section>
+
+    </main>
+
+    <footer>
+        <p>Jairo García Castro - Software y Estándares para la Web 2023</p><p> Última modificación: 10/22/2023 19:21:45</p>
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script src="js/staticMap.js"></script>
+    <script src="js/newsApi.js"></script>
+    <script src="js/lastModified.js"></script>
+    <script src="js/currentMeteo.js"></script>
+
+
+</body></html>

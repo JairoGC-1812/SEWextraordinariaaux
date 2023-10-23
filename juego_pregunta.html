@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jairo García Castro - UO271449">
+    <meta name="description" content="Pequeño juego de preguntas sobre el contenido del sitio web">
+    <meta name="keywords" content="Esuatini, Suazilandia, juego, test, quiz, preguntas">
+
+    <title>Turismo Esuatini - Juego</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/nav.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Turismo Esuatini</h1>
+        <nav>
+            <a href="index.html" title="Página de inicio" tabindex="1" accesskey="I">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía" tabindex="2" accesskey="G">Gastronomía</a>
+            <a href="rutas.html" title="Rutas turísticas" tabindex="3" accesskey="R"> Rutas</a>
+            <a href="meteorologia.html" title="Información meteorológica" tabindex="4" accesskey="M">Meteorología</a>
+            <a href="juego.html" class="active" title="Juego" tabindex="5" accesskey="J">Juego</a>
+            <a href="php/reservas.php" title="Reserva de rutas" tabindex="6" accesskey="V">Reservas</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Test sobre Esuatini</h2><article><h3>¿Cuál es uno de los principales cultivos de Esuatini?</h3><fieldset><legend>Selecciona una única respuesta</legend><p><input name="answer" id="0" type="radio" value="Avellana"><label for="0">Avellana</label></p><p><input name="answer" id="1" type="radio" value="Maíz"><label for="1">Maíz</label></p><p><input name="answer" id="2" type="radio" value="Cáñamo"><label for="2">Cáñamo</label></p><p><input name="answer" id="3" type="radio" value="Olivo"><label for="3">Olivo</label></p><p><input name="answer" id="4" type="radio" value="Tomate"><label for="4">Tomate</label></p></fieldset><input type="button" value="Siguiente" onclick="quiz.next();"></article>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Jairo García Castro - Software y Estándares para la Web 2023</p>
+    </footer>
+    <script src="js/quiz.js"></script>
+
+
+</body></html>
